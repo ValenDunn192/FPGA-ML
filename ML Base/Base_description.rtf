@@ -5,4 +5,9 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 With the basics of deep learning, in this folder there are 2 main things that will be made, a CNN for computer vision recognition, and then a neural network for looking at financial data and seeing if any growth extrapolation can be made with that data. Once these NN are made and trained I will use their weights to make neural networks in verilog for a FPGA to test speed, power requirement, and cost differences for both systems off my computer and on the FPGA. Any online resources that will be used will be documented here.}
+\f0\fs24 \cf0 With the basics of deep learning, in this folder there are 2 main things that will be made, a CNN for computer vision recognition, and then a neural network for looking at financial data and seeing if any growth extrapolation can be made with that data. Once these NN are made and trained I will use their weights to make neural networks in verilog for a FPGA to test speed, power requirement, and cost differences for both systems off my computer and on the FPGA. Any online resources that will be used will be documented here.\
+While the VOC dataset will be used at a later point due to the complicated nature of the development needed for that. The first video CNN will trained off the CIFAR100 dataset.
+The model I built was able to get around 34.4% accuracy which is less than the ones I found online with about 38% accuracy but has less than half the amount of parameters.
+The amount of parameters are important due to the small amount of storage that the FPGA's have. Further work on developing the FPGA's will happen next as I develop the second NN.
+The development of this phase has taken more time that I would have liked due to my realization that I needed to mover over to Pytorch from Keras due to Pytorch's more extensive abilites.\
+}
